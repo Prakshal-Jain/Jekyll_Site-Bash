@@ -17,7 +17,7 @@ bundle update
 bundle exec jekyll build
 
 #Push the changes in _site folder to the UB Server
-echo "Please enter remote system location (Example: remote_username@10.10.0.2:/remote/directory)"
+echo "Please enter remote system location (Example: username@timberlake.cse.buffalo.edu:Desktop/website)"
 read serv
 scp -r ./_site ${serv}
 
